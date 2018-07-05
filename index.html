@@ -4,18 +4,36 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Marvel App</title>
+	<title>S.H.I.E.L.D. Database</title>
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <h1> Bem vindo aplicativo da Marvel :D </h1>
-	<form action="" data-form="">
-		<input type="text" name="heroName">
-
-		<button>Procurar</button>
-	</form>
-
+	<div class="container">
+		<div class="title">
+			<!--<img id = "logo" src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/51/SHIELD_Profile.png/revision/latest?cb=20160424134326" alt="SHIELD Logo"> -->
+			<img id="logo" src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/51/SHIELD_Profile.png/revision/latest?cb=20160424134326"
+			 alt="SHIELD Logo">
+			<p>S.H.I.E.L.D. DATABASE</p>
+		</div>
+		<div class="search-form">
+			<form action="" data-form="character-form">
+				<input type="text" placeholder="We got a Hulk!" name="heroName">	
+				<button>CHARACTER</button>
+			</form>
+		</div>
+		<div class="search-form">
+			<form action="" data-form="event-form">
+				<input type="text" placeholder="What about Infinity War" name="eventName">
+				<button>EVENT</button>
+			</form>
+		</div>
+		<div class="search-form">
+			<form action="" data-form="return-form">
+				<p class="item" id="nameReturn"></p>
+			</form>
+		</div>
+	</div>
+	
   <script src="./assets/javascript/main.js"></script>
-
 </body>
 </html>
